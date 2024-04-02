@@ -1,0 +1,80 @@
+.fondo{
+    background-image: url('./imgs/fondolog.jpeg');
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sections{
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  color: #000000;
+  border-radius: 50px;
+  /* box-shadow: 1px 1px 5px 1px #7dc2cc ; */
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 1);
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  overflow: hidden;
+  transition: transform 100ms ease-in;
+  box-shadow: 0 6px 18px -9px rgba(0, 0, 0, 1);
+}
+.sections:hover{
+  transform: scale(1.07);
+}
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* Alinea verticalmente los elementos en el contenedor */
+}
+
+.grid-item {
+  flex: 1;
+}
+.rating {
+  margin-top: 10px; /* Espacio entre la imagen y el icono */
+  font-size: 20px; /* Ajusta el tamaño del icono a tu gusto */
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.subtitle{
+  font-size: 18px;
+}
+/* ------------------------------------------------------------------------------------- */
+/* fondo.css */
+/* fondo.css */
+.graficas {
+  width: 100%;
+  max-width: 1100px;
+  margin-left: 17%;
+  display: flex;
+  flex-direction: column; /* Cambio a dirección de columna */
+  align-items: center; /* Centra horizontalmente las gráficas */
+}
+
+.cards{
+  width: 100%;
+  max-width: 200px;
+  margin-left: 50%;
+}
+
+#chart2{
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.container-chartss {
+  border: none; /* Eliminar el borde */
+  height: 500px;
+  width: 750px;
+  align-items: center;
+  display: flex;
+  margin-left: 27%;
+}

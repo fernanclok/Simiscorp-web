@@ -1,0 +1,371 @@
+/* Configuración global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffffff;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    color: #000000;
+  }
+  
+  .bg-body-tertiary {
+    background-color: #e4e4e4 !important;
+    /* box-shadow: 0px 0px 20px 10px #928f92; */
+  }
+  
+  .navbar-brand,
+  .nav-link,
+  .navbar-nav {
+    color:#41739d;
+  }
+  
+  .navbar-brand:hover{
+    color: #000000;
+  }
+
+  .nav-link:hover{
+    color: #740761;
+  }
+  
+  .welcome {
+    /* border: 2px solid red; */
+    height: 400px;
+    background-image: url("./imgs/fondoIndex.jpg");
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .welcomes {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  .carrousel{
+    width: 95%;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 2.5%;
+    border-radius: 50px;  
+    overflow: hidden;
+    box-shadow: 0 6px 18px -9px rgba(0, 0, 0, 1);
+  }
+  .title {
+    color:#7dc2cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #ffffffe1;
+    width: 900px;
+    height: 65px;
+    border-radius: 40px;
+    cursor: default;
+  }
+  .title:hover{
+    background-color: #7dc2cc;
+    color:#ffffff;
+  }
+  .top-games {
+    float: right;
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  
+  .information {
+    /* border: 2px solid red; */
+    width: 900px;
+    height: 1200px;
+    margin-top: 20px;
+    margin-left: 20px;
+    position: static;
+  }
+  .card {
+    backdrop-filter: blur(5px);
+    color: #000000;
+    border-radius: 50px;
+    /* box-shadow: 1px 1px 5px 1px #7dc2cc ; */
+  }
+  
+  .card1,
+  .card2,
+  .card3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-text{
+    color:#41739d;
+    font-size: 18px;
+  }
+  .card-body {
+    color: #000000;
+  }
+  .Flotante{
+    margin-bottom: 8%;
+    border-radius: 50px;  
+    overflow: hidden;
+    transition: transform 100ms ease-in;
+    box-shadow: 0 6px 18px -9px rgba(0, 0, 0, 1);
+  }
+  .Flotante:hover{
+    transform: scale(1.07);
+  }
+  .top-games h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .card-img-top{
+    margin-left: 25%;
+    width: 180px;
+    height: auto;
+  }
+  /* ---------------------APARTADO GRID ---------------------------------*/
+  .container-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+div p{
+    font-size: 12px;
+    color:rgb(0, 0, 0);
+}
+.texto{
+    color:#41739d;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform:initial;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.imagenes{
+    width: 30px;
+    height: auto;
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #imagenes{
+    font-size: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.Catimagenes{
+  margin-top: 1%;
+  width: 100px;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* -----------------------APARTADO DE FOOTER ----------------------------*/
+ footer {
+  position: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  color: #000000;
+  text-align: center;
+  box-shadow: 0px 0px 40px -9px #928f92;
+}
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+  }
+
+  .social-icons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*margin: 1rem 0 3rem 0;*/
+    padding-right: 30px;
+    overflow: hidden;
+    transition: transform 100ms ease-in;
+  }
+
+  .social-icons li {
+    margin: 10px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social-icons li:hover {
+    transform: scale(1.07);
+  }
+  
+  .social-icons li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .social-icons li a img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+
+  .footer-credits {
+    text-align: center;
+    font-size: 14px;
+  }
+  .icons{
+    width: 35px;
+   height:auto; 
+  }
+  .fondo{
+    background-image: url('./imgs/fondoLogin.jpg');
+  }
+  .boton{
+    margin-left: 95%;
+    margin-top: 0%;
+    background-color: #ffffff;
+  }
+  /* -------------------------NOTICIAS--------------------------------------- */
+  .container {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Create flexible columns */
+    grid-gap: 20px; /* Gap between grid items */
+    padding: 10px;
+    width: 110%;
+    margin: 0 auto; /* This will center the container horizontally */
+  }
+  
+  .noticiaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+    width: 90%;
+    max-width: 500px; /* Optional: limit the max width to prevent stretching on larger screens */
+    box-shadow: 0px 0px 40px -9px #928f92;
+  }
+  
+  .imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    align-items: center;
+  }
+  
+  .titulo {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #41739d;
+    text-decoration: none;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    color: #41739d;
+  }
+  
+  .descripcion {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+    
+/* ---------------------------------------------------------------- */
+.image-container{
+  margin-top: 25%;
+    margin-left: 0%;
+    width: 250px;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inf{
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 10px;
+  width: 1002px;
+  box-shadow: 0px 0px 40px -9px #928f92; 
+}
+.IM{
+  background-image: url("./imgs/logo2.png");
+  margin-top: 3%;
+  margin-left: 82%;
+  width: 200px;
+  background-size: cover;
+   background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.h1{
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.categorias{
+    margin-top: 2%;
+    margin-left: 13%;
+}
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  max-width: 100%;
+  border-width: 0;
+}
+
+.button-container.d-flex {
+  gap: 5px; /* Adjust the value to control the spacing between buttons */
+}
+.Crud_admin4 {
+  position: static;
+  margin-left: 8%;
+  margin-right: auto;
+  margin-top: 2%;
+  max-width: 90%;
+  width: 1000px;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.alerta {
+  width: 100%;
+  max-width: fit-content;
+  align-items: center;
+  margin-left: 42%;
+  position: fixed;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
